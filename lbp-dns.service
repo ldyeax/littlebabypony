@@ -4,8 +4,8 @@ Wants=lbp-dns.timer
 [Service]
 Type=oneshot
 ExecStart=nmcli general reload dns-full
-ExecStart=resolvectl flush-caches
-
+ExecStart=sh /usr/local/lbp/resolvectl.sh
+SuccessExitStatus=1 2
 [Install]
 WantedBy=multi-user.target
 
