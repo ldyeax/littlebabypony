@@ -11,6 +11,9 @@ for s in *.timer; do
 	systemctl start $s
 done
 
+cp lbp-nm-dispatcher.sh /etc/NetworkManager/dispatcher.d/lbp-nm-dispatcher.sh
+chmod 555 /etc/NetworkManager/dispatcher.d/lbp-nm-dispatcher.sh
+
 systemctl daemon-reload
 systemctl daemon-reexec
 
