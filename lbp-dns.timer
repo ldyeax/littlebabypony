@@ -1,0 +1,9 @@
+[Unit]
+Description=dns flush timer
+Requires=lbp-dns.service
+[Timer]
+Unit=lbp-dns.service
+OnCalendar=*-*-* *:*:00
+[Install]
+WantedBy=timers.target
+
