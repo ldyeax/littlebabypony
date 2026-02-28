@@ -14,4 +14,5 @@ fi
 which vim && git config --global core.editor vim
 cp lbp-systemd-reload /usr/local/bin/lbp-systemd-reload
 chmod +x /usr/local/bin/lbp-systemd-reload
-
+cp lbp-xargs /usr/local/bin/lbp-xargs
+chmod +x /usr/local/bin/lbp-xargs
