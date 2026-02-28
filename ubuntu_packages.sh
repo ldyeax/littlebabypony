@@ -1,5 +1,3 @@
-apt -y update
-apt -y upgrade
 apt -y install \
 autoconf \
 automake \
@@ -28,6 +26,7 @@ libtool \
 lintian \
 lldb \
 ltrace \
+net-tools \
 ninja-build \
 pkg-config \
 python-is-python3 \
@@ -35,6 +34,7 @@ python3-dev \
 python3-pip \
 python3-venv \
 strace \
+python3-tk tk-dev tcl-dev \
 unzip \
 uuid-dev \
 valgrind \
