@@ -1,0 +1,5 @@
+alias gaa="git add '*'"
+alias gcm="git commit -m"
+alias gpul="git pull"
+alias gpush="git push"
+alias gcd="git checkout main"
