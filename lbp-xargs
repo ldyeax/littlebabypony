@@ -1,20 +1,20 @@
 : ${LBP_SUB:="%"}
 to_sub=""
-echo $BASH_ARGV
+#echo $BASH_ARGV
 
 pat=$LBP_SUB
 [[ $pat == [%#]* ]] && pat="\\$pat"
 
-echo "pat=$pat"
+#echo "pat=$pat"
 
 if [[ "$@" == *"$LBP_SUB"* ]]; then
 	to_sub="$@"
-	echo "Found sub; to_sub=$to_sub"
+	#echo "Found sub; to_sub=$to_sub"
 else
 	to_sub="$@ $LBP_SUB"
-	echo "Inserting sub; to_sub=$to_sub"
+	#echo "Inserting sub; to_sub=$to_sub"
 fi
 
 while read line; do
-	echo ${to_sub//$pat/$line}
+	bash -c "${to_sub//$pat/$line}"
 done
