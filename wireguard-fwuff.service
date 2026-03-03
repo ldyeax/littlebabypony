@@ -1,0 +1,23 @@
+[Unit]
+Description=WireGuard bring-up + healthcheck (fwuff)
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+
+# The script is written for bash; call it explicitly.
+ExecStart=/bin/bash /opt/wireguard-fwuff.sh
+
+Restart=on-failure
+RestartSec=3s
+
+User=root
+WorkingDirectory=/
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+KillSignal=SIGTERM
+TimeoutStopSec=10
+
+[Install]
+WantedBy=multi-user.target

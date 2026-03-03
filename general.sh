@@ -16,3 +16,5 @@ cp lbp-systemd-reload /usr/local/bin/lbp-systemd-reload
 chmod +x /usr/local/bin/lbp-systemd-reload
 cp lbp-xargs /usr/local/bin/lbp-xargs
 chmod +x /usr/local/bin/lbp-xargs
+cp lbp-indent /usr/local/bin/lbp-indent
+chmod +x /usr/local/bin/lbp-indent

@@ -1,3 +1,8 @@
-systemctl daemon-reload 
+systemctl daemon-reload
 systemctl daemon-reexec
-systemctl restart $1
+if [ -n "$1" ]; then
+	systemctl restart $1
+	echo "Restarted $1 and reload successful"
+else
+	echo "Reload successful"
+fi
