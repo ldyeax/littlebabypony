@@ -18,3 +18,9 @@ cp lbp-xargs /usr/local/bin/lbp-xargs
 chmod +x /usr/local/bin/lbp-xargs
 cp lbp-indent /usr/local/bin/lbp-indent
 chmod +x /usr/local/bin/lbp-indent
+mkdir -p /etc/profile.d/
+cp git_shortcuts.sh /etc/profile.d/git_shortcuts.sh
+chmod +x /etc/profile.d/git_shortcuts.sh
+cp gap /usr/local/bin/gap
+chmod +x /usr/local/bin/gap
+
