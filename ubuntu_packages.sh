@@ -34,6 +34,7 @@ python3-dev \
 python3-pip \
 python3-venv \
 strace \
+sqlite3 \
 python3-tk tk-dev tcl-dev \
 unzip \
 uuid-dev \
