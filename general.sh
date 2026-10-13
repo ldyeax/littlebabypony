@@ -1,6 +1,6 @@
 if grep buntu /etc/issue > /dev/null; then bash ubuntu.sh; fi
-git config --global user.name jimm
-git config --global user.email 'jimm@jimm.horse'
+git config --global user.name kate
+git config --global user.email 'kate@kate.horse'
 if [[ $(which fd) ]] then
 	echo "Found fd"
 else
